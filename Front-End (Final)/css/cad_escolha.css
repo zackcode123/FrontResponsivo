@@ -1,0 +1,41 @@
+/* Início do corpo */
+    #titulo01 {
+        font-weight: bold;
+        font-size: 52px;
+        text-align: center;
+    }
+
+    #paragrafo01 {
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* Espaçamento das linhas */
+        .linha0 {
+            padding-top: 150px;
+        }
+        .linha03 {
+            padding-top: 200px;
+            padding-bottom: 100px;
+        }
+    /**/
+
+    @media (max-width: 576px), (max-width: 1024px) {
+        #titulo01 {
+            font-size: 34px;
+        }
+        #paragrafo01 {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .linha0 {
+            padding-top: 30px;
+        }
+        .linha03 {
+            padding-top: 0px;
+            padding-bottom: 50px;
+        }
+    }
+/* Fim do corpo */

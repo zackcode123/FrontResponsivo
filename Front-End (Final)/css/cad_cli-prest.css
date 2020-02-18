@@ -1,0 +1,98 @@
+/* Início do corpo */
+    ::placeholder {
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .form-control {
+        height: 50px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    select {
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .btn_concluir {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        background-color: #5274ee;
+        color: white;
+        font-size: 30px;
+        margin-top: -60px;
+        margin-right: 95px;
+        border: none;
+    }
+
+    .btn_concluir:hover {
+        color: white;
+        background-color: #4360c9;
+    }
+
+    /* Espaçamento das linhas */
+        .linha_btn {
+            padding-bottom: 50px;
+        }
+    /**/
+
+    #selectCond {
+        font-weight: bold;
+        font-size: 22px;
+        color: #6c757d;
+    }
+
+    @media (max-width: 576px), (max-width: 1024px) {
+        ::placeholder {
+            font-size: 18px;
+        }
+        
+        .btn_concluir {
+            font-size: 20px;
+            margin-right: 18px;
+            margin-top: -20px;
+        }
+
+        .linha_btn {
+            padding-top: 0px;
+            padding-bottom: 50px;
+        }
+
+        #selectCond {
+            font-size: 18px;
+        }
+    }
+/* Fim do corpo */
+
+/* Início do pré_rodapé */
+    .p_rodape {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        background-color: #ffd359;
+        font-size: 22px;
+        height: 80px;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    a.voltarTopo:visited{
+        text-decoration:none;
+        color:#2c4ec6;
+    }
+        
+    a.voltarTopo:hover{
+        text-decoration:none;
+        color:black;
+    }
+
+    @media (max-width: 576px), (max-width: 1024px) {
+        .p_rodape {
+            font-size: 16px;
+            height: 60px;
+            padding-top: 15px;
+        }
+    }
+/* Fim do pré_rodapé */

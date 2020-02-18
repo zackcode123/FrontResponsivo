@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='css/bootstrap.css'>
+    <title>TRATO</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/cad_cli-prest.css">
+    <link rel="stylesheet" href="css/cad_escolha.css">
+    <!--Icone do título (favicon)-->
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <!--Link Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-xl navbar-light">
+            
+        <!--Logo-->
+        <a href="Home.html" class="navbar-brand logo">
+            <img src="img/logo_03.png" id="logo">
+        </a>
+        
+        <!--Exibição do Showcase para resoluções menores de 768px-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!--Inicio dos itens do menu que serão exibidos/ocultos de acordo com a regra definida acima-->
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav align-items-center">
+                
+                <!--Sobre-->
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html#sobre">SOBRE</a>
+                </li> <li id="espacamento01"></li>
+
+                <!--Entrar-->
+                <li class="nav-item">
+                    <a type="button" class="btn btn_cadastro" href="Login.html">ENTRAR</a>
+                </li> <li id="espacamento04"></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--CONTAINER-->
+    <div class="container-fluid container_01">
+            
+        <!--Linha 01-->
+        <div class="row justify-content-around linha0">
+                
+            <!--Coluna 01-->
+            <div class="col align-self-center colunas">
+                <h1 id="titulo01"> CADASTRE-SE COMO PRESTADOR <h1>
+            </div>
+        </div>
+            
+
+        <!--Linha 02-->
+        <div class="row justify-content-around linha02">
+            
+            <!--Coluna 01-->
+            <img src="img/cad_prestador.png" class="col-lg-5 col-md-7 col-sm-12 img-fluid">
+
+            <!--Coluna 02-->
+            <div class="col col-lg-5 col-md-7 col-sm-12 align-self-center colunas">
+                <!--Nome-->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">  <i class="fas fa-user"></i>  </div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Digite seu nome completo">
+                </div> <br>
+                    
+                <!--Email-->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">  <i class="fas fa-envelope"></i>  </div>
+                    </div>
+                    <input type="email"  class="form-control" placeholder="Digite seu e-mail">
+                </div> <br>
+
+                <!--CPF-->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">  <i class="fas fa-address-card"></i>  </div>
+                    </div>
+                    <input  inputmode="numeric" type="cpf" id="cpf" class="form-control" placeholder="Digite seu CPF">
+                </div> <br>
+                    
+                <!--CEP-->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">  <i class="fas fa-map-marked-alt"></i>  </div>
+                    </div>
+                    <input inputmode="numeric" type="cep" id="cep" class="form-control" placeholder="Digite seu CEP">
+                </div> <br>
+
+                <!--Celular 01-->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">  <i class="fas fa-phone"></i>  </div>
+                    </div>
+                    <input inputmode="numeric" type="tel" id="cel" class="form-control" placeholder="Digite seu núm. celular">
+                </div> <br>
+                    
+                <!--Celular 02-->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">  <i class="fas fa-phone"></i>  </div>
+                    </div>
+                    <input inputmode="numeric" type="tel" id="cel2" class="form-control" placeholder="Digite outro núm. celular">
+                </div> <br>
+
+                <!--Senha 01-->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">  <i class="fas fa-key"></i>  </div>
+                    </div>
+                    <input type="password" class="form-control" placeholder="Digite sua senha">
+                </div> <br>
+
+                <!--Senha 02-->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">  <i class="fas fa-key"></i>  </div>
+                    </div>
+                    <input type="password" class="form-control" placeholder="Repita sua senha">
+                </div> <br>
+
+                <!--Condição-->
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">  <i class="fas fa-universal-access"></i>  </div>
+                    </div>
+                    <select id="selectCond" class="form-control">
+                        <option>Selecione sua Condição</option>
+                        <option>Visual</option>
+                        <option>Auditiva</option>
+                        <option>Fisica</option>
+                        <option>Intelectual</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Linha 03-->
+        <div class="row justify-content-end linha_btn">   
+            <a type="button" class="btn btn-light btn-lg btn_concluir" href="#">CONCLUIR</a>
+        </div>
+    </div>
+
+
+    <!--PRÉ RODAPÉ-->
+    <div class="container-fluid p_rodape">
+        <a href="#" class="voltarTopo" id="sobre" onMouseOver="seta.src='img/seta2.png'" onMouseOut="seta.src='img/seta3.png'">
+            Voltar ao topo
+            <img src="img/seta3.png" id="seta">
+        </a>
+    </div>
+
+
+    <!--RODAPÉ-->
+    <div class="container-fluid rodape">
+        <!--Linha 01-->
+        <div class="row">
+            <!--Coluna 01-->
+            <div class="col-lg-4 col-md-4 col-sm-12 r_coluna01">
+                <img src="img/logo_03.png" id="logo">
+            </div>
+            
+            <!--Coluna 02-->
+            <div class="col-lg-4 col-md-4 col-sm-12 align-self-center r_coluna02">
+                <p>Acompanhe-nos nas redes sociais!</p>
+                <img src="img/facebook_icon.png" id="icones"> &emsp;
+                <img src="img/instagram_icon.png" id="icones"> &emsp;
+                <img src="img/twitter_icon.png" id="icones"> &emsp;
+                <img src="img/youtube_icon.png" id="icones">
+            </div>
+            
+            <!--Coluna 03-->
+            <div class="col-lg-4 col-md-4 col-sm-12 r_coluna03">
+                <p>
+                    Nossos contatos: <br>
+                    email@email.com.br <br>
+                    +55 (11) 1234-5678 <br>
+                    +55 (11) 98765-4321
+                </p>
+            </div>
+
+            <!--Coluna 04-->
+            <div class="col-12 r_coluna04">
+                <p>Termos de uso e privacidade @ 2020 Trato</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Link das máscaras de formatação de campo-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <script>
+        jQuery(function ($) {
+            $("#cpf").mask("000.000.000-00");
+            $("#cep").mask("00000-000");
+            $("#cel").mask("(00) 00000-0000");
+            $("#cel2").mask("(00) 00000-0000");
+        });
+    </script>
+    
+    <!--Link dos ícones dos Forms-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

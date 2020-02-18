@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='css/bootstrap.css'>
+    <title>TRATO</title>
+    <link rel="stylesheet" href="css/home.css">
+    <!--Icone do título (favicon)-->
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <!--Link Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-xl navbar-light">
+        
+        <!--Logo-->
+        <a href="#" class="navbar-brand logo">
+            <img src="img/logo_03.png" id="logo">
+        </a>
+        
+        <!--Exibição do Showcase para resoluções menores de 768px-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!--Inicio dos itens do menu que serão exibidos/ocultos de acordo com a regra definida acima-->
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav align-items-center">
+                
+                <!--Sobre-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">SOBRE</a>
+                </li> <li id="espacamento01"></li>
+
+                <!--O quê é?-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#o_que_e">O QUE É?</a>
+                </li> <li id="espacamento01"></li>
+                
+                <!--Como funciona?-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#como_funciona">COMO FUNCIONA?</a>
+                </li> <li id="espacamento01"></li>
+                
+                <!--Usuário-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#usuario">USUÁRIO</a>
+                </li> <li id="espacamento01"></li>
+                
+                <!--Prestador PCD-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#prestador_pcd">PRESTADOR PCD</a>
+                </li> <li id="espacamento02"></li>
+
+                <!--Entrar-->
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">ENTRAR</a>
+                </li> <li id="espacamento03"></li>
+
+                <!--Cadastro-->
+                <li class="nav-item">
+                    <a type="button" class="btn btn_cadastro" href="Cad_escolha.html">CADASTRO</a>
+                </li> <li id="espacamento04"></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--CONTAINER 01-->
+    <div class="container-fluid container_01">
+            
+        <!--Linha 01-->
+        <div class="row justify-content-around linha01">
+                
+            <!--Coluna 01-->
+            <div class="col-lg-5 col-md-5 col-sm-12 align-self-center colunas" id="sobre">
+                <h1 id="titulos"> SOFTWARE DEVELOPMENT <h1>
+                <p id="paragrafos"> 
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi
+                    enim ad minim veniam.
+                </p>
+            </div>
+                
+            <!--Coluna 02-->
+            <img src="img/identidade_visual.png" class="col-lg-5 col-md-7 col-sm-12 img-fluid colunas">
+        </div>
+            
+
+        <!--Linha 02-->
+        <div class="row justify-content-around linha02">
+                
+            <!--Coluna 01-->
+            <img src="img/o_que_e.png" class="col-lg-4 col-md-6 col-sm-12 img-fluid colunas" id="o_que_e">
+                
+            <!--Coluna 02-->
+            <img src="img/como_funciona.png" class="col-lg-4 col-md-6 col-sm-12 img-fluid colunas" id="como_funciona">
+        </div>
+    </div>
+
+    <!--CONTAINER 02-->
+    <div class="container-fluid container_02">
+            
+        <!--Linha 01-->
+        <div class="row justify-content-around linha01">
+                
+            <!--Coluna 01-->
+            <img src="img/representacao_usuario.png" class="col-lg-6 col-md-7 col-sm-12 img-fluid colunas" id="usuario">
+                
+            <!--Coluna 02-->
+            <div class="col-lg-4 col-md-5 col-sm-12 align-self-center colunas">
+                <h1 id="titulos"> ENTRE PARA A NOSSA COMUNIDADE! <h1>
+                <p id="paragrafos"> 
+                    Estamos em constante crescimento. Faça parte
+					dessa comunidade de gente do bem para encontrar
+					os profissionais mais qualificados e os melhores 
+					clientes.
+                </p>
+
+                <a type="button" class="btn btn-light btn-lg btn_cadastro02" href="Cad_escolha.html">CADASTRO</a>
+            </div>
+        </div>
+            
+        <!--Linha 02-->
+        <div class="row justify-content-around linha02">
+                
+            <!--Coluna 01-->
+            <div class="col-lg-4 col-md-5 col-sm-12 align-self-center colunas" id="prestador_pcd">
+                <h1 id="titulos"> UTILIZE EM QUALQUER LUGAR! <h1>
+                <p id="paragrafos"> 
+                    Nosso site é totalmente responsivo para que
+					a sua experiência seja a melhor possível
+					não importando a tela que esteja. Acesse no
+					seu computador, tablete ou smartphone.
+                </p>
+            </div>
+                
+            <!--Coluna 02-->
+            <img src="img/06.png" class="col-lg-6 col-md-7 col-sm-12 img-fluid colunas">
+        </div>
+    </div>
+    
+
+    <!--PRÉ RODAPÉ-->
+    <div class="container-fluid pre_rodape">
+        <a href="#" class="voltarTopo" id="sobre" onMouseOver="seta.src='img/seta2.png'" onMouseOut="seta.src='img/seta.png'">
+            Voltar ao topo
+            <img src="img/seta.png" id="seta">
+        </a>
+    </div>
+
+
+    <!--RODAPÉ-->
+    <div class="container-fluid rodape">
+        <!--Linha 01-->
+        <div class="row">
+            <!--Coluna 01-->
+            <div class="col-lg-4 col-md-4 col-sm-12 r_coluna01">
+                <img src="img/logo_03.png" id="logo">
+            </div>
+            
+            <!--Coluna 02-->
+            <div class="col-lg-4 col-md-4 col-sm-12 align-self-center r_coluna02">
+                <p>Acompanhe-nos nas redes sociais!</p>
+                <img src="img/facebook_icon.png" id="icones"> &emsp;
+                <img src="img/instagram_icon.png" id="icones"> &emsp;
+                <img src="img/twitter_icon.png" id="icones"> &emsp;
+                <img src="img/youtube_icon.png" id="icones">
+            </div>
+            
+            <!--Coluna 03-->
+            <div class="col-lg-4 col-md-4 col-sm-12 r_coluna03">
+                <p>
+                    Nossos contatos: <br>
+                    email@email.com.br <br>
+                    +55 (11) 1234-5678 <br>
+                    +55 (11) 98765-4321
+                </p>
+            </div>
+
+            <!--Coluna 04-->
+            <div class="col-12 r_coluna04">
+                <p>Termos de uso e privacidade @ 2020 Trato</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
